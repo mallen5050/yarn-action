@@ -105,4 +105,3 @@ apk add vips-dev fftw-dev build-base --no-cache --allow-untrusted --repository h
 
 # since we will be "always" mounting the volume, we can set this up
 ENTRYPOINT ["/usr/bin/dumb-init"]
-CMD ["python"]
