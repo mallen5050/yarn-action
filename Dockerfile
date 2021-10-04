@@ -105,4 +105,5 @@ apk add vips-dev fftw-dev build-base --no-cache --allow-untrusted --repository h
 
 # since we will be "always" mounting the volume, we can set this up
 
-CMD ["yarn"]
+COPY "entrypoint.sh" "/entrypoint.sh"
+ENTRYPOINT ["/entrypoint.sh"]
